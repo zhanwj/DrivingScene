@@ -15,7 +15,7 @@ we provide 52 different kinds of driving scenes, cutting across common driving i
 weather conditions, places and road structures. The scene category word-tree is shown.
 ![zhanwj](https://github.com/zhanwj/DrivingScene/blob/master/work-tree.PNG)
 
-# Method
+# Deep data integration
 Two categories about processing biased data: re-sampling, which aims to balance the class priors by under-sampling the majority classes or over-sampling the minority classes, and cost-sensitive learning, which assigns higher misclassification costs to the minority
 classes than to the majority ones. In order to combined both categories
 into CNN approaches, we design a multi-label architecture, which incorporate both single- and multi-class training

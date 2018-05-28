@@ -36,10 +36,11 @@ into the deeper CNN.
 Following those strategies, we show PR-curves as followed,which shows that our method achieves a much higher precision
 in terms of the same recall value compared with other baselines.
 ![zhanwj](https://github.com/zhanwj/DrivingScene/blob/master/PR-curves.PNG)
-
+![zhanwj](https://github.com/zhanwj/DrivingScene/blob/master/Test_example1.PNG)
+![zhanwj](https://github.com/zhanwj/DrivingScene/blob/master/Test_example2.PNG)
 # Visualization of the Deep Features
 We first utilize the test set of DrvingScene (i.e., 55k images) as the input for the network. Then we sort all the images
 according to the activation responses of neural units in one layer. Finally we take the top 100 deconvolution images with
 the largest responses as the receptive field (RF) visualization of the units at the layer of Pool5.
 ![zhanwj](https://github.com/zhanwj/DrivingScene/blob/master/Visualization.PNG)
-![zhanwj](https://github.com/zhanwj/DrivingScene/blob/master/Test_examples.PNG)
+

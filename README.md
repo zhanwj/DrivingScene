@@ -20,7 +20,7 @@ Two categories about processing biased data: re-sampling, which aims to balance 
 classes than to the majority ones. In order to combined both categories
 into CNN approaches, we design a multi-label architecture, which incorporate both single- and multi-class training
  by a multi-level loss function. Can be seen as followed.
-![zhanwj](https://github.com/zhanwj/DrivingScene/blob/master/architecture.PNG)
+![zhanwj](https://github.com/zhanwj/DrivingScene/blob/master/Network.PNG)
 One question left unsolved, which is how to effectively conduct sampling for selected single-labels for each single-labels side. A commom method is that small classes can be chosen during the training procedure, however, as the weight values are fixed, it is more likely to make the network overfitting on small tag groups. So we adapt the AdaBoost algorithm in an additional data layer to manage the sampling process, keeping the classification balanced between multiple label tags. We also estimate the attention area  for our four super classes in each single-labels side. For an image sample to be classified, the label belonging to the weather category is assigned to the top area of the image. The road structure class and the road instance class are usually found in the bottom area of images. And the place class is mostly related to the central image area.
 
 # Result

@@ -31,11 +31,15 @@ encodes super classes by the knowledge from a confusion
 matrix, which proposes a multi-scale architecture with
 two CNNs. The shallow CNN is used to extract features of the
 super classes and aims to integrate minority class information
-into the deeper CNN.
+into the deeper CNN. Baseline3  combines multi-level resampling into the
+deep-learning structure. Here, we train the boosted cascaded
+convolutions in 3 levels since the loss of the network is
+stabilized. Baseline4 uses a Quintuplet sampling strategy, with
+parameters unaltered. 
 
 Following those strategies, we show PR-curves as followed,which shows that our method achieves a much higher precision
 in terms of the same recall value compared with other baselines.
-![zhanwj](https://github.com/zhanwj/DrivingScene/blob/master/PR-curves.PNG)
+![zhanwj](https://github.com/zhanwj/DrivingScene/blob/master/PR.PNG)
 ![zhanwj](https://github.com/zhanwj/DrivingScene/blob/master/Test_example1.PNG)
 ![zhanwj](https://github.com/zhanwj/DrivingScene/blob/master/Test_example2.PNG)
 # Visualization of the Deep Features
